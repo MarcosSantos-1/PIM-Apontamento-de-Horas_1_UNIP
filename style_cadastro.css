@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+}
+
+nav.menu-lateral{
+    width: 72px;
+    height: 100%;
+    background-color: #221F27 ;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0px 0px #4b4258;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+ 
+nav.menu-lateral:hover{
+    width: 300px;
+    height: 100%;
+    background-color: #221F27 ;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0px 0px #4b4258;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 150% ;
+    padding-left: 7px;
+    padding-bottom: 16px;
+
+}
+.btn-expandir > i{
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{
+    background-color: #373242;
+    transition: 0.5s;
+}
+
+ul li.ativo{
+    background-color: #373242 ;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 25px;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 30px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.container{
+    margin-left: 340px;
+    margin-right: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+  }
+
+  h1{
+
+    margin-bottom: 40px;
+  }
+
+
+  .formulario {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    width: 30%;
+    font-size: 17px;
+    background-color: #7033FF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    margin-left: 340px;
+    margin-right: 150px;
+    margin-top: 50px;
+
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .relogio {
+    font-size: 4em;
+    margin-top: 30px;
+    font: bold;
+  }
+
+nav.menu-lateral{
+    width: 72px;
+    height: 100%;
+    background-color: #221F27 ;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0px 0px #4b4258;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+    height: 100%;
+    background-color: #221F27 ;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0px 0px #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 150% ;
+    padding-left: 7px;
+    padding-bottom: 16px;
+
+}
+.btn-expandir > i{
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{
+    background-color: #373242;
+    transition: 0.5s;
+}
+
+ul li.item-menu-a:hover{
+    background-color: #a56e27;
+    transition: 0.5s;
+}
+ul li.ativo{
+    background-color: #373242 ;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+ul li.item-menu-a a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    line-height: 25px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 25px;
+    transition: .5s;
+}
+ul li.item-menu-a a .txt-link{
+    margin-left: 25px;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 30px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+ul li.item-menu-a a .icon > i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.main{
+    margin-left: 300px;
+}
+
+
+#logo{
+    width: 100px; /* Ajuste conforme necessário para o tamanho do seu logo */
+    height: 100px; /* Ajuste conforme necessário para o tamanho do seu logo */
+    border-radius: 8px; /* Cria a forma de meia lua na parte esquerda */
+    overflow: hidden;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon HR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style_apontamento.css">
+  <link rel="icon" type="image/x-icon" href="/Horizon/assets/favicon.ico">
+
+
+
+</head>
+<body>
+
+  <nav class="menu-lateral">
+    <div class="btn-expandir">
+        <i class="bi bi-list" id="btn-exp"></i>
+   </div> 
+   <ul>
+    <li class="item-menu">
+      <a href="/Horizon/homepage.html">
+            <span class="icon"><i class="bi bi-house-door"></i></span>
+            <span class="txt-link">Home</span>
+        </a>
+    </li>
+
+    <li class="item-menu">
+      <a href="/Horizon/cadastro.html">
+          <span class="icon"><i class="bi bi-people-fill"></i></span>
+          <span class="txt-link">Cadastro</span>
+        </a>
+    </li>
+
+    <li class="item-menu ativo">
+        <a href="/Horizon/apontamentohoras.html">
+            <span class="icon"><i class="bi bi-file-earmark-spreadsheet"></i></span>
+            <span class="txt-link">Apontamento de Horas</span>
+        </a>
+    </li>
+
+    <li class="item-menu">
+      <a href="/Horizon/acompanhamentoferias.html">
+        <span class="icon"><i class="bi bi-suitcase-lg"></i></span>
+            <span class="txt-link">Acompanhamento de Férias</span>
+        </a>
+    </li>
+
+   </ul>
+</nav>
+
+
+
+<div class="container">
+  <h1>Apontamento de horas</h1>
+  <form id="apontamentoForm">
+    <label for="funcionarioId">ID Funcionário:</label>
+    <input type="text" id="funcionarioId" required>
+    
+    <label for="data">Data Apontamento:</label>
+    <input type="date" id="data" required>
+
+    <label for="horaEntrada">Hora Entrada:</label>
+    <input type="time" id="horaEntrada" required>
+
+    <label for="horaSaida">Hora Saída:</label>
+    <input type="time" id="horaSaida" required>
+
+    <button type="button" onclick="adicionarApontamento()">Adicionar Apontamento</button>
+  </form>
+
+  <table id="apontamentosTable">
+    <thead>
+      <tr>
+        <th>ID Funcionário</th>
+        <th>Data Apontamento</th>
+        <th>Hora Entrada</th>
+        <th>Hora Saída</th>
+        <th>Total Horas Dia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dados da tabela serão inseridos aqui dinamicamente -->
+    </tbody>
+  </table>
+
+  <div id="totalHorasDiarias">Total Horas Diárias: 0</div>
+</div>
+<script src="apontamentos.js"></script>
+<script src="menu.js"></script>
+
+
+</div>
+
+</body>
+
+</html>
